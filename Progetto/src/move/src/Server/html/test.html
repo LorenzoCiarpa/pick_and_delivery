@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<link rel="stylesheet" href="index.css">
+
+
+<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+
+<script type="text/javascript" src="ros.js"></script>
+</head>
+
+<body>
+  <body>
+
+          <section id="main">
+              <div id="utente"></div>
+              <h1 id="titolo0"></h1>
+              <h1 id="titolo1"> BENVENUTO NELL'EDIFICIO! </h1>
+              <h3 id='stanza-log'></h3>
+              <h2 id="titolo2"> QUI POTRETE INVIARE E RICEVERE PACCHI GRAZIE AL SERVIZIO DEL NOSTRO ROBOT! </h2>
+              <form action="" class ="form-signin" method="POST" name="myForm" id="form-id">
+                  <h3> Inserisci nome e cognome prima di accedere (in alternativa effettuerai l'accesso come ospite) </h3>
+                      <table>
+                          <tr>
+                              <th> <input type="text" name="name" placeholder="name" id="name"/></th>
+                              <th> <input type="text" name="surname" placeholder="surname" id="surname"/></th>
+                          </tr>
+                      </table>
+                  <h3> Seleziona la stanza dove effettuare l'accesso: </h3>
+                  <table>
+                      <tr>
+                          <th><label> Sala 1 <input type="checkbox" name="stanza" value="sala 1" /> </label> </th>
+                          <th><label> Sala 2 <input type="checkbox" name="stanza" value="sala 2" /> </label> </th>
+                      </tr>
+                      <tr>
+                          <th><label> Sala 3 <input type="checkbox" name="stanza" value="sala 3" /> </label> </th>
+                      <th><label> sala 4 <input type="checkbox" name="stanza" value="sala 4" /> </label> </th>
+                      </tr>
+                      <tr>
+                          <th><label> sala 5 <input type="checkbox" name="stanza" value="sala 5" /> </label> </th>
+                          <th><label> sala 6 <input type="checkbox" name="stanza" value="sala 6" /> </label> </th>
+                      </tr>
+                      <tr>
+                          <th><label> sala 7 <input type="checkbox" name="stanza" value="sala 7" /> </label> </th>
+                          <th><label> sala 8 <input type="checkbox" name="stanza" value="sala 8" /> </label> </th>
+                      </tr>
+                  </table>
+                  <br>
+                  <button type="button" onclick="accedi()"> Accedi </button>
+              </form>
+              <div id="consegna">
+                  <div id="azione-robot">
+                      <button type="button" onclick="richiamaRobot()"> Chiama il ROBOT </button>
+                      <span id="attesa" ><h3> Immetti il pacco sul ROBOT e seleziona la destinazione del pacco da spedire:</h3></span>
+                  </div>
+                  <table>
+                      <tr>
+                          <th><label> Sala 1 <input type="checkbox" name="stanza2" value="sala 1" /> </label> </th>
+                          <th><label> Sala 2 <input type="checkbox" name="stanza2" value="sala 2" /> </label> </th>
+                      </tr>
+                      <tr>
+                          <th><label> Sala 3 <input type="checkbox" name="stanza2" value="sala 3" /> </label> </th>
+                      <th><label> Sala 4 <input type="checkbox" name="stanza2" value="sala 4" /> </label> </th>
+                    </tr>
+                  <tr>
+                      <th><label> Sala 5 <input type="checkbox" name="stanza2" value="sala 5" /> </label> </th>
+                      <th><label> Sala 6 <input type="checkbox" name="stanza2" value="sala 6" /> </label> </th>
+                  </tr>
+                  <tr>
+                      <th><label> Sala 7 <input type="checkbox" name="stanza2" value="sala 7" /> </label> </th>
+                      <th><label> Sala 8 <input type="checkbox" name="stanza2" value="sala 8" /> </label> </th>
+                  </tr>
+              </table>
+              <br>
+              <button type="button" onclick="spedisci()" id="sped" > Spedisci </button>
+              <span id="transito"> </span>
+          </div>
+
+
+</body>
+</html>

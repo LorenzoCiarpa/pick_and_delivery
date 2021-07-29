@@ -1,0 +1,2 @@
+move
+-DCATKIN_DEVEL_PREFIX=/home/me/Desktop/Progetto/devel -DCMAKE_INSTALL_PREFIX=/home/me/Desktop/Progetto/install -G Unix Makefiles
