@@ -1,1 +1,0 @@
-/home/davide/Desktop/Pick_And_Delivery/Pick_And_Delivery/workspace/devel/.private/move_robot/include/move_robot/NewGoal.h

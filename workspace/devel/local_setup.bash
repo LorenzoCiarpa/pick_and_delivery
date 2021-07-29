@@ -1,1 +1,0 @@
-/home/davide/Desktop/Pick_And_Delivery/Pick_And_Delivery/workspace/devel/.private/catkin_tools_prebuild/local_setup.bash
